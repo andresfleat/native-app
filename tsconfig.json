@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "paths": {
+      "@apis/*": ["app/shared/apis/*"],
+      "@interfaces/*": ["app/shared/interfaces/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "platforms",
+    "**/*.aot.ts"
+  ]
+}

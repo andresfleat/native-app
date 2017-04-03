@@ -1,0 +1,12 @@
+<ActionBar title="Register">
+  <NavigationButton text="Back to login" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+
+<StackLayout class="flt-register-page" orientation="vertical" [formGroup]="registerForm">
+  <Label text="Fleat"></Label>
+  <Label text="Something different, every day."></Label>
+  <TextField formControlName="email" hint="Email"></TextField>
+  <TextField formControlName="password" hint="Password" secure="true"></TextField>
+  <TextField formControlName="passwordAgain" hint="Write password again" secure="true"></TextField>
+  <Button class="flt-btn flt-btn-success" text="Confirm" (tap)="register()"></Button>
+</StackLayout>

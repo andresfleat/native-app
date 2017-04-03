@@ -1,0 +1,1 @@
+/Users/christofferskog/Desktop/fleat/native-app/platforms/android/src/main/assets/app/app-router.module.js

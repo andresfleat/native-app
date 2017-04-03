@@ -1,0 +1,15 @@
+
+<StackLayout class="flt-login-page" orientation="vertical" [formGroup]="loginForm">
+  <Label text="Fleat" right="0"></Label>
+  <Label text="Something different, every day."></Label>
+  <Label text="Login with"></Label>
+  <Button class="flt-btn flt-btn-facebook" text="Facebook"></Button>
+  <Label>or</Label>
+  <TextField formControlName="email" hint="Email"></TextField>
+  <TextField formControlName="password" hint="Password" secure="true"></TextField>
+  <Button class="flt-btn flt-btn-success" text="Log in" (tap)="login()"></Button>
+  <StackLayout>
+    <Label text="Don't have an account?"></Label>
+    <Button text="Register now" (tap)="goToRegister()"></Button>
+  </StackLayout>
+</StackLayout>
